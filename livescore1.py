@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[70]:
-
-
 import json
 from urllib.request import urlopen
 
@@ -15,24 +12,6 @@ data = json.loads(source)
 print("Livescores : ")
 for match in data['data']['match']:
     print(json.dumps(match, indent = 2))
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[73]:
-
 
 
 country_string = "Brazil" # Enter the name of the Country
@@ -59,8 +38,6 @@ for m in data_c['data']['match']:
     print(json.dumps(m, indent = 2))
 
 
-# In[59]:
-
 
 fxt_url = "http://livescore-api.com/api-client/fixtures/matches.json?key=6r94GgdPiJ5ciqdx&secret=70Qx0KjZN2uD6jfdLohrFuhXem9wNm4U"
 
@@ -75,8 +52,6 @@ for fx in data_f['data']['fixtures'] :
         print(json.dumps(fx, indent = 2))
 
 
-# In[ ]:
 
-
-
+        
 
